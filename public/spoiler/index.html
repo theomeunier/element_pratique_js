@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .spoiler-content{
+            display: inline-block;
+            width: 0;
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: opacity 0.5s;
+        }
+        .spoiler-content.visible{
+            display: inline;
+            width: auto;
+            height: auto;
+            opacity: 1;
+        }
+        .spoiler{
+            color: #424242;
+        }
+    </style>
+</head>
+<body>
+<h1>Coucou toi</h1>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, aspernatur consequatur consequuntur deleniti
+    deserunt dignissimos eveniet exercitationem impedit ipsam libero maxime minus mollitia nam possimus provident
+    repellat reprehenderit tempora voluptatum?
+</p>
+<p class="spoiler">
+    <span>Monsieur X meurt a la fin</span>
+</p>
+<p>
+    <span>Lorem ipsum dolor sit amet, <span class="spoiler">obcaecati perferendis</span> consectetur adipisicing elit. Aliquam amet consectetur dolores excepturi</span>
+    <span>exercitationem fuga minima,  perspiciatis qui repudiandae, unde ut. Alias optio</span>
+    <span>recusandae rem repudiandae tempora vitae.</span>
+</p>
+
+<script src="spoiler.js"></script>
+
+</body>
+</html>
